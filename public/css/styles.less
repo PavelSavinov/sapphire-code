@@ -1,0 +1,61 @@
+/* Variables */
+
+@light-gray: #f8f8f8;
+@dark-gray: #eee;
+@black: #333;
+
+body, html {
+	height: 100%;
+}
+
+/* Admin Header */
+
+.header-adm {
+	height: 50px;
+	background-color: @light-gray;
+		h2 {
+			margin: 0;
+			padding: 5px;
+		}
+}
+
+
+/* Admin Navigation */
+
+
+.no-indent {
+	float: left;
+	padding: 0;
+	width: 250px;
+	.nav-adm  {
+		height: 100%;
+		list-style-type: none;
+		background-color: @light-gray;
+			a {	
+				padding: 10px;
+				display: inline-block;
+				font-size: 18px;
+				width: 250px;
+				color: @black;
+
+				 	&:hover {
+				 		background-color: @dark-gray;
+				 		text-decoration: none;
+				 	}
+				 	&:first-letter {
+				 		padding-right: 6px;
+				 		font-size: 16px;
+				 	}
+
+			}
+	}
+}
+
+
+/* Admin Content */
+
+.adm-container {
+	padding: 20px;
+	display: inline-block;
+	width: 83%;	
+}
